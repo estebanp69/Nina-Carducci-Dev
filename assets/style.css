@@ -240,13 +240,29 @@ body {
 
 .mg-prev,
 .mg-next {
-    width: 30px;
-    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1055;
+    width: 40px;
+    height: 40px;
+    border: none;
     border-radius: 50%;
+    background-color: white;
+    color: #222222;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    font-size: 24px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mg-prev {
+    left: -25px;
+}
+
+.mg-next {
+    right: -25px;
 }
 
 /* ========================================
@@ -688,4 +704,8 @@ form input[type="submit"]:focus-visible {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+}
+
+#myAwesomeLightbox .modal-body {
+    position: relative;
 }

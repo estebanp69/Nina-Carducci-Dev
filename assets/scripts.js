@@ -1,12 +1,11 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     $('.gallery').mauGallery({
         columns: {
-            xs: 1,
-            sm: 2,
-            md: 3,
-            lg: 3,
-            xl: 3
+            xs: 2,  // Smartphone : 2 photos par ligne
+            sm: 3,  // Grand smartphone : 3 photos par ligne
+            md: 4,  // Tablette : 4 photos par ligne
+            lg: 3,  // Ordinateur : 3 photos par ligne
+            xl: 3   // Grand écran : 3 photos par ligne
         },
         lightBox: true,
         lightboxId: 'myAwesomeLightbox',
